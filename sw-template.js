@@ -7,7 +7,7 @@ workbox.setConfig({
 });
 
 workbox.core.setCacheNameDetails({
-    prefix: "yixiuer"
+    prefix: "nWupf"
 });
 
 workbox.core.skipWaiting();

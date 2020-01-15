@@ -1,7 +1,7 @@
 {
-  "name": "yixiuer.me",
+  "name": "jiangnann.com",
   "version": "1.0.0",
-  "description": "一休儿的哲学博客",
+  "description": "Blog of Mine",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,19 +10,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yixiuer/yixiuer.me.git"
+    "url": "git+https://github.com/nWupf/jiangnann.com.git"
   },
   "keywords": [
     "blog",
     "hugo",
     "hugo-theme-meme"
   ],
-  "author": "一休儿",
+  "author": "nWupf",
   "license": "CC-BY-NC-SA-4.0",
   "bugs": {
-    "url": "https://github.com/yixiuer/yixiuer.me/issues"
+    "url": "https://github.com/nWupf/jiangnann.com/issues"
   },
-  "homepage": "https://github.com/yixiuer/yixiuer.me#readme",
+  "homepage": "https://github.com/nWupf/jiangnann.com#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-uglify": "^3.0.2",
