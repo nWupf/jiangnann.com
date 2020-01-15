@@ -7,7 +7,7 @@ workbox.setConfig({
 });
 
 workbox.core.setCacheNameDetails({
-    prefix: "reuixiy"
+    prefix: "yixiuer"
 });
 
 workbox.core.skipWaiting();
@@ -31,6 +31,24 @@ workbox.routing.registerRoute(
             new workbox.cacheableResponse.Plugin({
                 statuses: [0, 200]
             })
+        ]
+    })
+);
+
+// Videos
+workbox.routing.registerRoute(
+    /\.(?:mp4|webm|ogg)$/,
+    new workbox.strategies.CacheFirst({
+        cacheName: "videos",
+        plugins: [
+            new workbox.expiration.Plugin({
+                maxEntries: 1000,
+                maxAgeSeconds: 60 * 60 * 24 * 30
+            }),
+            new workbox.cacheableResponse.Plugin({
+                statuses: [200]
+            }),
+            new workbox.rangeRequests.Plugin()
         ]
     })
 );
@@ -80,6 +98,23 @@ workbox.routing.registerRoute(
     /^https:\/\/cdn\.jsdelivr\.net/,
     new workbox.strategies.CacheFirst({
         cacheName: "static-libs",
+        plugins: [
+            new workbox.expiration.Plugin({
+                maxEntries: 1000,
+                maxAgeSeconds: 60 * 60 * 24 * 30
+            }),
+            new workbox.cacheableResponse.Plugin({
+                statuses: [0, 200]
+            })
+        ]
+    })
+);
+
+// Videos
+workbox.routing.registerRoute(
+    /^https:\/\/gateway\.pinata\.cloud\/ipns\/yixiuer\.me\/videos\/.*/,
+    new workbox.strategies.CacheFirst({
+        cacheName: "videos",
         plugins: [
             new workbox.expiration.Plugin({
                 maxEntries: 1000,

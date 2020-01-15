@@ -1,7 +1,7 @@
 {
-  "name": "io-oi.me",
+  "name": "yixiuer.me",
   "version": "1.0.0",
-  "description": "Blog of Mine",
+  "description": "一休儿的哲学博客",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,19 +10,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/reuixiy/io-oi.me.git"
+    "url": "git+https://github.com/yixiuer/yixiuer.me.git"
   },
   "keywords": [
     "blog",
     "hugo",
     "hugo-theme-meme"
   ],
-  "author": "reuixiy",
+  "author": "一休儿",
   "license": "CC-BY-NC-SA-4.0",
   "bugs": {
-    "url": "https://github.com/reuixiy/io-oi.me/issues"
+    "url": "https://github.com/yixiuer/yixiuer.me/issues"
   },
-  "homepage": "https://github.com/reuixiy/io-oi.me#readme",
+  "homepage": "https://github.com/yixiuer/yixiuer.me#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-uglify": "^3.0.2",
